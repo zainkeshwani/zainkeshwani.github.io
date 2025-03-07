@@ -1,0 +1,341 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  margin: 0;
+  /* Reset default body margin */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a img {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  margin: 20px;
+  max-width: 600px;
+  padding-left: 75px;
+}
+#exp-tab-words {
+  max-width: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+
+#main-heading {
+  background-color: black;
+  color: #ffff00;
+  padding: 1rem;
+  text-align: left;
+  font-size: 100px;
+  font-family: 'Fantasy', monospace;
+  margin: 0;
+  /* Remove default margin */
+}
+
+#kebab-container {
+  background-color: #333;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#kebab-menu {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 7px;
+  height: 7px;
+  background-color: #ffff00;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.kebab-item a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: 5px solid #ffff00;
+  transition: transform 0.3s ease;
+  padding: 0;
+  margin-top: 3px;
+}
+
+.kebab-item a:hover img {
+  transform: scale(1.07);
+}
+
+
+#sub-heading-left {
+  font-size: 50px;
+  font-family: Verdana, sans-serif;
+  text-indent: 10px;
+  color: #fff;
+  text-decoration-line: underline;
+  margin: 20px;
+}
+
+#tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  padding: 10px;
+  border-top: 2px solid #ffff00;
+}
+
+#self-photo1 {
+  float: right;
+  padding-right: 100px;
+  display: block;
+}
+
+#self-photo1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 60%;
+}
+
+#java-udemy-certificate,
+#team-fieldtrip-img {
+  float: right;
+  padding-right: 100px;
+  display: block;
+}
+
+#java-udemy-certificate img,
+#team-fieldtrip-img img {
+  width: 450px;
+  height: auto;
+  border-radius: 50px;
+}
+
+#district-2024-img {
+  float: right;
+  padding-right: 100px;
+  display: block;
+}
+
+#district-2024-img img {
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.ach-tab-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* Aligns images to the right */
+  right: 0px;
+  margin: 20px;
+}
+
+
+#welcome-start {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  margin: 20px;
+  max-width: 600px;
+  padding-left: 75px;
+  float: left;
+  display: inline;
+}
+
+#nav-tools {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  margin: 20px;
+  max-width: 600px;
+  padding-left: 75px;
+  float: left;
+
+}
+
+.tab-button.active-button {
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.info-content {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  margin: 20px;
+  max-width: 600px;
+  padding-left: 75px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #ffff00;
+  font-size: 19px;
+  cursor: pointer;
+  font-family: 'Fantasy', monospace;
+}
+
+.tab-button:hover {
+  text-decoration: underline;
+  transform: scale(1.15);
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ffff00;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end) forwards,
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #ffff00
+  }
+}
+
+#climber-the-dog img {
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
+  transform: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-me {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black with opacity */
+  border-radius: 10px;
+}
+
+#about-me-button {
+  border-radius: 10px;
+  background-color: #333;
+  color: #ffff00;
+  font-family: Verdana, sans-serif;
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border: 2px solid #ffff00;
+  cursor: pointer;
+}
+
+#about-me-heading {
+  color: #ffff00;
+  font-size: 50px;
+}
+
+.about-me-content {
+  background-color: black;
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+  text-align: left;
+}
+
+.close {
+  color: #ffff00;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
