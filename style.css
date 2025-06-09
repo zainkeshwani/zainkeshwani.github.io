@@ -156,6 +156,25 @@ ul {
   border-radius: 50px;
 }
 
+#vector-visualizer-addition img {
+  width: 500px;
+  height: auto;
+}
+
+#amazon-web-scraper img {
+  width: 800px;
+  height: auto;
+}
+
+
+.projects-gifs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 0px;
+  margin: 20px;
+}
+
 .ach-tab-stack {
   display: flex;
   flex-direction: column;
@@ -338,4 +357,24 @@ ul {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+.edu-entry {
+  display: flex;
+  align-items: center;
+  margin: 20px 75px;
+  max-width: 1000px;
+}
+
+.edu-image {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.edu-text {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  color: #fff;
 }
